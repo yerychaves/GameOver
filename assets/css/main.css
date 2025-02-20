@@ -545,6 +545,20 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+
+  	/*Buscador*/
+
+.header .searchLabel {
+    padding-right: 15px;
+	padding-left: 6px;
+	position: relative;
+	font-size: 16px;
+}
+
+.card{
+    margin-bottom: 20px;
+}
+
 }
 
 /*--------------------------------------------------------------
