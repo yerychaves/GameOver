@@ -61,3 +61,22 @@
 .bg-resenas-title{
   background-color: #830502;
 }
+.bg-ofertas-title{
+  background-color: black;
+}
+.bg-noticias-title{
+  background-color: black;
+}
+.bg-eventos-title{
+  background-color: #0E02AA;
+}
+
+.img-games {
+  height: 300px;
+  object-fit: cover;
+}
+
+.img-games-section {
+  height: 236px;
+  object-fit: cover;
+}
