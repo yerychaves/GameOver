@@ -183,7 +183,11 @@ a {
 
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
 }
 
 h1,
