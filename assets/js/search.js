@@ -7,6 +7,10 @@ const data = [
         redirectTo: 'resenas-nota.html',
         keyWords: ['assassin', 'creed', 'ubisoft']
     },
+    {
+        redirectTo: 'ofertas-nota.html',
+        keyWords: ['configuración', 'escritorio', 'mouse', 'teclado', 'monitor']
+    },
 ]
 
 const search = () => {
