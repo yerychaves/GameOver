@@ -89,9 +89,15 @@
 .color-text-nav{
   color: #000000 !important;
 }
-.logo-img{
- 
-}
+
 .bg-color-block{
   background-color: #7800E8;
+}
+
+.hv-100 {
+  height: 100vh;
+}
+
+.font-family-text {
+  font-family: 'Montserrat', sans-serif;
 }
