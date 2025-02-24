@@ -70,35 +70,58 @@
           href="index.html"
           class="logo d-flex align-items-center me-auto me-xl-0 ms-4"
         >
-          <img src="assets/img/logoweb-GameOver.png"/>
+          <img src="assets/img/logoweb-GameOver.png" />
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
-              <a href="noticias.html" class="fs-6 fw-semibold color-text-nav">Noticias</a>
+              <a href="noticias.html" class="fs-6 fw-semibold color-text-nav"
+                >Noticias</a
+              >
             </li>
-            <li><a href="eventos.html" class="fs-6 fw-semibold color-text-nav">Eventos</a></li>
-            <li><a href="juegos.html" class="fs-6 fw-semibold color-text-nav">Juegos</a></li>
-            <li><a href="resenas.html" class="fs-6 fw-semibold color-text-nav">Reseñas</a></li>
-            <li><a href="ofertas.html" class="fs-6 fw-semibold color-text-nav">Ofertas</a></li>
+            <li>
+              <a href="eventos.html" class="fs-6 fw-semibold color-text-nav"
+                >Eventos</a
+              >
+            </li>
+            <li>
+              <a href="juegos.html" class="fs-6 fw-semibold color-text-nav"
+                >Juegos</a
+              >
+            </li>
+            <li>
+              <a href="resenas.html" class="fs-6 fw-semibold color-text-nav"
+                >Reseñas</a
+              >
+            </li>
+            <li>
+              <a href="ofertas.html" class="fs-6 fw-semibold color-text-nav"
+                >Ofertas</a
+              >
+            </li>
+            <li>
+              <!-- Search Function -->
+              <form class="d-flex p-4" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                  id="search-input"
+                />
+                <button
+                  class="btn btn-outline-success bg-color-buttom"
+                  type="button"
+                  onclick="search()"
+                >
+                  <i class="fa-solid fa-magnifying-glass color-icon"></i>
+                </button>
+              </form>
+            </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <!-- Search Function -->
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Buscar"
-            aria-label="Search"
-            id="search-input"
-          />
-          <button class="btn btn-outline-success bg-color-buttom" type="button" onclick="search()">
-            <i class="fa-solid fa-magnifying-glass color-icon"></i>
-          </button>
-        </form>
       </div>
     </header>
 
@@ -221,9 +244,13 @@
           class="container bg-noticias-title mb-4 rounded"
           data-aos="fade-up"
         >
-          <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center justify-content-between py-2">
             <h2 class="text-white">Noticias</h2>
-            <p><a href="noticias.html" class="text-white strong fs-6 fw-medium">Ver más</a></p>
+            <a
+              href="noticias.html"
+              class="text-white fs-6 fw-medium text-decoration-underline link-underline-light"
+              >Ver más</a
+            >
           </div>
         </div>
 
@@ -346,7 +373,11 @@
         <div class="container bg-eventos-title mb-4 rounded" data-aos="fade-up">
           <div class="d-flex align-items-center justify-content-between py-2">
             <h2 class="text-white">Eventos</h2>
-            <p><a href="eventos.html" class="text-white strong fs-6 fw-medium">Ver más</a></p>
+            <a
+              href="eventos.html"
+              class="text-white strong fs-6 fw-medium text-decoration-underline link-underline-light"
+              >Ver más</a
+            >
           </div>
         </div>
 
@@ -483,7 +514,11 @@
         <div class="container bg-games-title mb-4 rounded" data-aos="fade-up">
           <div class="d-flex align-items-center justify-content-between py-2">
             <h2 class="text-white">Juegos</h2>
-            <a href="juegos.html" class="text-white fs-6 fw-medium">Ver más</a>
+            <a
+              href="juegos.html"
+              class="text-white fs-6 fw-medium text-decoration-underline link-underline-light"
+              >Ver más</a
+            >
           </div>
         </div>
         <!-- End Section Title -->
@@ -602,7 +637,11 @@
         <div class="container bg-resenas-title mb-4 rounded" data-aos="fade-up">
           <div class="d-flex align-items-center justify-content-between py-2">
             <h2 class="text-white">Reseñas</h2>
-            <p><a href="resenas.html" class="text-white fs-6 fw-medium">Ver más</a></p>
+            <a
+              href="resenas.html"
+              class="text-white fs-6 fw-medium text-decoration-underline link-underline-light"
+              >Ver más</a
+            >
           </div>
         </div>
         <!-- End Section Title -->
@@ -730,7 +769,11 @@
         <div class="container bg-ofertas-title mb-4 rounded" data-aos="fade-up">
           <div class="d-flex align-items-center justify-content-between py-2">
             <h2 class="text-white">Ofertas</h2>
-            <p><a href="ofertas.html" class="text-white fs-6 fw-medium">
+            <a
+              href="ofertas.html"
+              class="text-white fs-6 fw-medium text-decoration-underline link-underline-light"
+              >Ver más</a
+            >
           </div>
         </div>
         <!-- End Section Title -->
