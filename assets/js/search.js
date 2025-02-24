@@ -11,6 +11,14 @@ const data = [
         redirectTo: 'ofertas-nota.html',
         keyWords: ['configuración', 'escritorio', 'mouse', 'teclado', 'monitor']
     },
+    {
+        redirectTo: 'eventos-nota.html',
+        keyWords: ['mundial', 'worlds 2024', 'fan fest', '2 de noviembre']
+    },
+    {
+        redirectTo: 'noticias-nota.html',
+        keyWords: ['forza', 'horizon', 'xbox', 'japonesa']
+    },
 ]
 
 const getInputSearchElement = () => {
