@@ -3,13 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Ofertas</title>
-    <meta name="description" content="Sección de Ofertas de GAME OVER" />
+    <title>Publicación de GAME OVER</title>
+    <meta name="description" content="Publicación de GAME OVER" />
     <meta name="keywords" content="Página informativa gamer" />
 	  
 	<!-- Search -->
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
@@ -49,49 +54,66 @@
     />
 
     <!-- Main CSS File -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
 
-  <body class="category-page">
+  <body class="single-post-page">
     <header id="header" class="header d-flex align-items-center sticky-top">
       <div
         class="container position-relative d-flex align-items-center justify-content-between"
       >
-        <a
+		<a
           href="index.html"
-          class="logo d-flex align-items-center me-auto me-xl-0"
+          class="logo d-flex align-items-center me-auto me-xl-0 ms-4"
         >
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logoweb-GameOver.png" alt="">
+          <img src="assets/img/logoweb-GameOver.png" />
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="noticias.html"class="fs-6 fw-semibold color-text-nav">Noticias</a></li>
-            <li><a href="eventos.html"class="fs-6 fw-semibold color-text-nav">Eventos</a></li>
-            <li><a href="juegos.html"class="fs-6 fw-semibold color-text-nav">Juegos</a></li>
-            <li><a href="resenas.html"class="fs-6 fw-semibold color-text-nav">Reseñas</a></li>
+            <li><a href="noticias.html" class="fs-6 fw-semibold color-text-nav">Noticias</a></li>
+            <li><a href="eventos.html" class="fs-6 fw-semibold color-text-nav">Eventos</a></li>
+            <li><a href="juegos.html" class="fs-6 fw-semibold color-text-nav">Juegos</a></li>
+            <li><a href="resenas.html" class="fs-6 fw-semibold color-text-nav">Reseñas</a></li>
             <li><a href="ofertas.html" class="active fs-6 fw-semibold color-text-nav">Ofertas</a></li>
+          <li>
+              <!-- Search Function -->
+              <form class="d-flex p-4" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                  id="search-input"
+                />
+                <button
+                  class="btn btn-outline-success bg-color-buttom"
+                  type="button"
+                  onclick="search()"
+                >
+                  <i class="fa-solid fa-magnifying-glass color-icon"></i>
+                </button>
+              </form>
+            </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <!-- Search Function -->
-        <div class="header-social-links"></div>
       </div>
     </header>
 
     <main class="main">
       <!-- Page Title -->
-      <div class="page-title position-relative">
+      <div class="page-title">
         <div
           class="container d-lg-flex justify-content-between align-items-center"
         >
-          <h1 class="mb-2 mb-lg-0">Ofertas</h1>
+          <h1 class="mb-2 mb-lg-0">Publicación</h1>
           <nav class="breadcrumbs">
             <ol>
               <li><a href="index.html">Inicio</a></li>
-              <li class="current">Ofertas</li>
+              <li><a href="ofertas.html">Ofertas</a></li>
+              <li class="current">Publicación</li>
             </ol>
           </nav>
         </div>
@@ -101,251 +123,176 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <!-- Blog Posts Section -->
-            <section id="blog-posts" class="blog-posts section">
+            <!-- Blog Details Section -->
+            <section id="blog-details" class="blog-details section">
               <div class="container">
-                <div class="row gy-4">
-                  <div class="col-lg-6">
-                    <article class="position-relative h-100">
-                      <div class="post-img position-relative overflow-hidden">
-                        <img
-                          src="assets/img/ofertas-nota-1.jpg"
-                          class="img-fluid"
-                          alt="Imagen de una mesa con una computadora de escritorio gamer, unos parlantes, un teclado, un mouse, un control de Xbox y una laptop"
-                        />
-                        <span class="post-date">Marzo 3</span>
-                      </div>
-
-                      <div class="post-content d-flex flex-column">
-                        <h3 class="post-title">
-                          Cómo armar la perfecta configuración al menor precio
-                        </h3>
-
-                        <div class="meta d-flex align-items-center">
-                          <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-circle-user"></i
-                            ><span class="ps-2">Yery Chaves</span>
-                          </div>
-                        </div>
-
-                        <p>
-                          No es necesario gastar una fortuna cuando de la configuración perfecta de tu escritorio se trata. Aquí te decimos los detalles de los mejores accesorios del momento al mejor precio, sin comprometer calidad ni estética.
-                        </p>
-
-                        <hr />
-
-                        <a
-                          href="ofertas-nota.html"
-                          class="readmore stretched-link"
-                          ><span>Leer más&nbsp;</span
-                          ><i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </div>
-                    </article>
+                <article class="article">
+                  <div class="post-img">
+                    <img
+                      src="assets/img/ofertas-nota-1.jpg"
+                      alt="Imagen de una mesa con una computadora de escritorio gamer, unos parlantes, un teclado, un mouse, un control de Xbox y una laptop"
+                      class="img-fluid"
+                    />
                   </div>
-                  <!-- End post list item -->
 
-                  <div class="col-lg-6">
-                    <article class="position-relative h-100">
-                      <div class="post-img position-relative overflow-hidden">
-                        <img
-                          src="assets/img/ofertas-nota-2.jpg"
-                          class="img-fluid"
-                          alt="Imagen de un Xbox con unos audífonos y dos controles"
-                        />
-                        <span class="post-date">Marzo 3</span>
-                      </div>
+                  <h2 class="title">
+                    Cómo armar la perfecta configuración al menor precio
+                  </h2>
 
-                      <div class="post-content d-flex flex-column">
-                        <h3 class="post-title">
-                          Xbox: Los mejores y los peores accesorios del 2025
-                        </h3>
-
-                        <div class="meta d-flex align-items-center">
-                          <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-circle-user"></i
-                            ><span class="ps-2">Yery Chaves</span>
-                          </div>
-                        </div>
-
-                        <p>
-                          A veces los accesorios de moda no son los mejores ni van con nuestro estilo. Aquí te contamos cuáles son los mejores y los peores accesorios de Xbox del 2025, según nuestros seguidores.
-                        </p>
-
-                        <hr />
-
-                        <a
-                          href="ofertas-nota.html"
-                          class="readmore stretched-link"
-                          ><span>Leer más&nbsp;</span
-                          ><i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </div>
-                    </article>
+                  <div class="meta-top">
+                    <ul>
+                      <li class="d-flex align-items-center">
+                        <i class="fa-solid fa-circle-user"></i
+                        ><span class="ps-2">Yery Chaves</span>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="fa-solid fa-clock"></i
+                        ><span class="ps-2">Mar 3, 2025</span>
+                      </li>
+                    </ul>
                   </div>
-                  <!-- End post list item -->
+                  <!-- End meta top -->
 
-                  <div class="col-lg-6">
-                    <article class="position-relative h-100">
-                      <div class="post-img position-relative overflow-hidden">
-                        <img
-                          src="assets/img/ofertas-nota-3.jpg"
-                          class="img-fluid"
-                          alt=""
-                        />
-                        <span class="post-date">Marzo 3</span>
-                      </div>
+                  <div class="content">
+                    <p>
+						No es necesario gastar una fortuna cuando de la configuración perfecta de tu escritorio se trata. Aquí te decimos los detalles de los mejores accesorios del momento al mejor precio, sin comprometer calidad ni estética.
+                    </p>
 
-                      <div class="post-content d-flex flex-column">
-                        <h3 class="post-title">
-                          Mouse con cable o inalámbrico: La eterna discordia
-                        </h3>
+                    <p>
+                      <h3>Escritorio Cooler Master GD160</h3>
+                    </p>
 
-                        <div class="meta d-flex align-items-center">
-                          <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-circle-user"></i
-                            ><span class="ps-2">Yery Chaves</span>
-                          </div>
-                        </div>
+                    <p>
+						Considerado uno de los mejores escritorio gamer, el Cooler Master GD160 se caracteriza por poseer un estable marco que soporta el peso de hasta 110 kilogramos, lo que garantiza la seguridad de tu costoso equipo de escritorio.
+                    </p>
+					
+					<p>
+						También permite cierto nivel de ergonomía, al permitir ciertos ajustes en la altura del mismo.
+					</p>
+					
+					<p>
+						Toda su superficie es literalmente un mousepad resistente al agua, lo que permite deslizar sin problemas el mouse en absolutamente toda la superficie del escritorio, lo que te permite algo de ahorro en esa parte, así como una bandeja donde se pueden ocultar los cables.
+					</p>
+					
+					<p>
+						<a href="https://www.amazon.com/dp/B09QRYK3NC?tag=edit-tech-round-up-20&ascsubtag=04PY7t6regKaRhmlrdeAYRK&th=1" alt="Enlace para adquirir el escritorio Cooler Master GD160" target="_blank"><u>Enlace para adquirir el escritorio Cooler Master GD160</u></a>
+				  </p>
 
-                        <p>
-                          Precisión versus comodidad y portatibilidad. En ésta nota te decimos por qué no debería de ser una o la otra, aprende todo acerca de la nueva generación de mouse.
-                        </p>
+                  <h3>Mouse Asus ROG Keris II Ace</h3>
+					
+					<p>
+						A pesar de ser un mouse sencillo y económico, el Asus ROD Keris II Ace ofrece un redimiento de alto nivel, lo que lo convierte en el accesorio ideal a la hora de jugar todos tus juegos favoritos de PC.
+					</p>
+					
+					<p>
+						El mouse es liviano y preciso, lo que ayuda a realizar movimientos rápidos, para manos grandes o pequeñas, ya que viene en diferentes tamaños.
+					</p>
+					
+					<p>
+						Es un mouse inalámbrico, con un receptor de 2,4 GHz de baja latencia, pero aún así también incluye un USB-C de casi dos metros, para una conexión con cable.
+					</p>
+					
+					<p>
+						<a href="https://www.amazon.com/ASUS-ROG-II-Lightweight-SpeedNova/dp/B0D3CX3WFL?tag=edit-tech-round-up-20&ascsubtag=01nIQ4Y02FPy52pPcYKP6K4&th=1" alt="Enlace para adquirir el mouse Asus ROG Keris II Ace" target="_blank"><u>Enlace para adquirir el mouse Asus ROG Keris II Ace</u></a>
+					</p>
+					
+					<p>
+					<h3>Teclado Razer BlackWidow V4 Pro</h3>
+					</p>
+				  
+				  <p>
+					Considerado el mejor teclado para juegos para el 2025, el Razer BlackWidow V4 Pro es un teclado grande, brillante y lleno de funciones.
+				  </p>
+				  
+				  <p>
+					Este teclado es un poco más grande que los teclados promedio, ya que tiene espacio para controles multimedia, y un 'Razer Command Dial' que te permite cambiar fácilmente entre aplicaciones y juegos, hacer zoom, ajustar el brillo, entre muchas otras funciones.
+				  </p>
+				  
+				  <p>
+				  <a href="https://www.razer.com/gaming-keyboards/razer-blackwidow-v4-pro?irclickid=zuSz:gX49xyKW5YUXDSOkxKyUkszeeU3:wzCSU0&irgwc=1&utm_source=IGN%E2%80%8A&utm_medium=affiliate&utm_content=1442478&utm_term=IGN%E2%80%8A&utm_sharedid=&cid=IGN%E2%80%8A-affiliate" alt="Enlace para adquirir el teclado Razer BlackWidow V4 Pro" target="_blank"><u>Enlace para adquirir el teclado Razer BlackWidow V4 Pro</u></a>
+				  </p>
+               
+				  <img src="assets/img/ofertas-inside-post.jpg" class="img-fluid" alt="Imagen de una mesa con una computadora de escritorio gamer, un teclado, un mouse, un control de XBox y una laptop">
 
-                        <hr />
-
-                        <a
-                          href="ofertas-nota.html"
-                          class="readmore stretched-link"
-                          ><span>Leer más&nbsp;</span
-                          ><i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </div>
-                    </article>
+                  <h3>Xbox Core Controller</h3>
+                  
+				  <p>
+                    Como su nombre lo indica, éste control es un todo un control de Xbox, listo para ser usado por todos aquellos jugadores de PC que quieren experimentar toda una experiencia nueva.
+                  </p>
+                  
+				  <p>
+                    El control es ergonómico, los botones están en una ubicación de fácil acceso, que junto a su agarre ergonómico, permite jugar durante horas sin que tus manos presenten fatiga ni se te deslice el control en los mejores momentos de la acción.
+                  </p>
+				  
+				  <p>
+                    Por si fuera poco, casi todos los botones se pueden reasignar.
+                  </p>				
+				  
+				  <p>
+				  <a href="https://www.amazon.com/Xbox-Core-Controller-Carbon-Black-one/dp/B08DF248LD?tag=edit-tech-round-up-20&ascsubtag=01XjqcD5TYjyP2OWa1RwLDd" alt="Enlace para adquirir el Xbox Core Controller" target="_blank"><u>Enlace para adquirir el Xbox Core Controller</u></a>
+				  </p>
+				  
+				<h3>Monitor LG UltraGear 34GP950G-B</h3>
+                  <p>
+                    Después de invertir tu tiempo y dinero escogiendo la mejor PC y los mejores accesorios, ahora es momento de elegir un monitor que esté a la altura de tu configuración.
+                  </p>
+                  <p>
+                    Y eso es exactamente el monitor LG UltraGear 34GP950G-B, el cual no te va a decepcionar con su pantalla grande, resolución nítida, alta frecuencia de actualización y gran cantidad de funciones de juego, que te van a dejar a la orilla de tu silla de gamer.
+                  </p>
+				  <p>
+                    Este monitor de 34 pulgadas envuelve su campo de visión con una curvatura de 3800R. Eso, combinado con la relación de aspecto cinematográfica 21:9 y la resolución de 1440p, crea una experiencia de juego inmersiva.
+                  </p>
+				  <p>
+				  <a href="https://www.amazon.com/LG-34GP950G-B-Ultragear-Response-Adjustable/dp/B097QF8CP3?tag=edit-tech-round-up-20&ascsubtag=02XbeNzuG9uKnZYys4nURs2&th=1" alt="Enlace para adquirir el monitor LG UltraGear 34GP950G-B" target="_blank"><u>Enlace para adquirir el monitor LG UltraGear 34GP950G-B</u></a>
+				  </p>
                   </div>
-                  <!-- End post list item -->
-
-                  <div class="col-lg-6">
-                    <article class="position-relative h-100">
-                      <div class="post-img position-relative overflow-hidden">
-                        <img
-                          src="assets/img/ofertas-nota-4.jpg"
-                          class="img-fluid"
-                          alt=""
-                        />
-                        <span class="post-date">Marzo 3</span>
-                      </div>
-
-                      <div class="post-content d-flex flex-column">
-                        <h3 class="post-title">
-                          Teclado y mouse: Los mejores dúos dinámicos del mercado
-                        </h3>
-
-                        <div class="meta d-flex align-items-center">
-                          <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-circle-user"></i
-                            ><span class="ps-2">Yery Chaves</span>
-                          </div>
-                        </div>
-
-                        <p>
-                          No siempre hay que comprometer calidad y precio sobre estética, aquí te damos la información de los mejores dúos de teclado con mouse, a los mejores precios.
-                        </p>
-
-                        <hr />
-
-                        <a
-                          href="ofertas-nota.html"
-                          class="readmore stretched-link"
-                          ><span>Leer más&nbsp;</span
-                          ><i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </div>
-                    </article>
-                  </div>
-                  <!-- End post list item -->
-
-                  <div class="col-lg-6">
-                    <article class="position-relative h-100">
-                      <div class="post-img position-relative overflow-hidden">
-                        <img
-                          src="assets/img/ofertas-5.jpg"
-                          class="img-fluid"
-                          alt=""
-                        />
-                        <span class="post-date">Marzo 3</span>
-                      </div>
-
-                      <div class="post-content d-flex flex-column">
-                        <h3 class="post-title">
-                          PS5: Aprovecha las ofertas por el State of Play 2025
-                        </h3>
-
-                        <div class="meta d-flex align-items-center">
-                          <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-circle-user"></i
-                            ><span class="ps-2">Yery Chaves</span>
-                          </div>
-                        </div>
-
-                        <p>
-                          Si ya es hora de actualizar tu librería de juegos, aquí te decimos cómo podés aprovechar las ofertas del State of Play.
-                        </p>
-
-                        <hr />
-
-                        <a
-                          href="ofertas-nota.html"
-                          class="readmore stretched-link"
-                          ><span>Leer más&nbsp;</span
-                          ><i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </div>
-                    </article>
-                  </div>
-                  <!-- End post list item -->
-                </div>
+                  <!-- End post content -->
+                </article>
               </div>
             </section>
-            <!-- /Blog Posts Section -->
+            <!-- /Blog Details Section -->
           </div>
 
           <div class="col-lg-4 sidebar">
             <div class="widgets-container">
-              <!-- Blog Author Widget 2 -->
-              <div class="blog-author-widget-2 widget-item">
+              <!-- Blog Author Widget -->
+              <div class="blog-author-widget widget-item">
                 <div class="d-flex flex-column align-items-center">
-                  <img
-                    src="assets/img/yac-pic.jpg"
-                    class="rounded-circle flex-shrink-0"
-                    alt="Retrato de Yery Chaves"
-                  />
-                  <h4>Yery Chaves</h4>
-                  <div class="social-links">
-                    <a
-                      href="https://www.youtube.com/"
-                      alt="Cuenta de YouTube de GAME OVER"
-                      target="_blank"
-                      ><i class="fa-brands fa-youtube"></i
-                    ></a>
-                    <a
-                      href="https://www.facebook.com/"
-                      alt="Cuenta de Facebook de GAME OVER"
-                      target="_blank"
-                      ><i class="fa-brands fa-facebook"></i
-                    ></a>
-                    <a
-                      href="https://www.instagram.com/"
-                      alt="Cuenta de Instagram de GAME OVER"
-                      target="_blank"
-                      ><i class="fa-brands fa-instagram"></i
-                    ></a>
-                    <a
-                      href="https://www.twitch.tv/"
-                      alt="Cuenta de Twitch de GAME OVER"
-                      target="_blank"
-                      ><i class="fa-brands fa-twitch"></i
-                    ></a>
+                  <div class="d-flex align-items-center w-100">
+                    <img
+                      src="assets/img/yac-pic.jpg"
+                      class="rounded-circle flex-shrink-0"
+                      alt=""
+                    />
+                    <div>
+                      <h4>Yery Chaves</h4>
+                      <div class="social-links">
+                        <a
+                          href="https://www.youtube.com/"
+                          alt="Cuenta de YouTube de GAME OVER"
+                          target="_blank"
+                          ><i class="fa-brands fa-youtube"></i
+                        ></a>
+                        <a
+                          href="https://www.facebook.com/"
+                          alt="Cuenta de Facebook de GAME OVER"
+                          target="_blank"
+                          ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                        <a
+                          href="https://www.instagram.com/"
+                          alt="Cuenta de Instagram de GAME OVER"
+                          target="_blank"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                        <a
+                          href="https://www.twitch.tv/"
+                          alt="Cuenta de Twitch de GAME OVER"
+                          target="_blank"
+                          ><i class="fa-brands fa-twitch"></i
+                        ></a>
+                      </div>
+                    </div>
                   </div>
 
                   <p>
@@ -353,7 +300,7 @@
                   </p>
                 </div>
               </div>
-              <!--/Blog Author Widget 2 -->
+              <!--/Blog Author Widget -->
             </div>
           </div>
         </div>
@@ -420,9 +367,9 @@
 
       <div class="container copyright text-center mt-4">
         <p>
-          ©<span>Copyright</span
-          ><strong class="px-1 sitename">GAME OVER.</strong
-          ><span>Todos los derechos reservados.</span>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">GAME OVER.</strong>
+          <span>Todos los derechos reservados.</span>
         </p>
       </div>
     </footer>
@@ -445,5 +392,6 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.js"></script>
   </body>
 </html>
