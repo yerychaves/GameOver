@@ -82,13 +82,42 @@
 }
 .bg-color-buttom{
   background-color: #7800E8;
+  border: #7800E8;
 }
+
+.bg-color-buttom:hover{
+  background-color: #B376FE;
+  border: #B376FE;
+}
+
+.btn {
+  bs-btn-focus-box-shadow: 0 0 0 0.25rem rgb(190 0 232 / 50%);
+}
+
+.btn-outline-success{
+	bs-btn-color: #7800E8;
+    bs-btn-border-color: #7800E8;
+    bs-btn-hover-color: #fff;
+    bs-btn-hover-bg: #B376FE;
+    bs-btn-hover-border-color: #B376FE;
+    bs-btn-focus-shadow-rgb: 25, 135, 84;
+    bs-btn-active-color: #fff;
+    bs-btn-active-bg: #7800E8;
+    bs-btn-active-border-color: #7800E8;
+    bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    bs-btn-disabled-color: #50009C;
+    bs-btn-disabled-bg: transparent;
+    bs-btn-disabled-border-color: #50009C;
+    bs-gradient: none;
+}
+
 .color-icon{
   color: white;
 }
-.color-text-nav{
+
+/*.color-text-nav{
   color: #000000 !important;
-}
+}*/
 
 .bg-color-block{
   background-color: #7800E8;
