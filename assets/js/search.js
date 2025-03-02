@@ -27,6 +27,8 @@ const getInputSearchElement = () => {
 
 const handleOnSearch = () => {
     const inputValue = getInputSearchElement().value
+    if (!inputValue) return
+
     const redirectTo = searchFilter(inputValue)
     window.location = redirectTo
 }
