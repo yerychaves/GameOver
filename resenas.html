@@ -7,6 +7,15 @@
     <meta name="description" content="Sección de Reseñas de GAME OVER" />
     <meta name="keywords" content="Página informativa gamer" />
 
+   <!-- Search -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/game-over-icon.png" rel="game-over-icon" />
@@ -45,6 +54,7 @@
     />
 
     <!-- Main CSS File -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
 
@@ -55,26 +65,40 @@
       >
         <a
           href="index.html"
-          class="logo d-flex align-items-center me-auto me-xl-0"
+          class="logo d-flex align-items-center me-auto me-xl-0 ms-4"
         >
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">GAME OVER</h1>
+          <img src="assets/img/logoweb-GameOver.png" />
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="noticias.html">Noticias</a></li>
-            <li><a href="eventos.html">Eventos</a></li>
-            <li><a href="juegos.html">Juegos</a></li>
-            <li><a href="resenas.html" class="active">Reseñas</a></li>
-            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="noticias.html" class="fs-6 fw-semibold color-text-nav">Noticias</a></li>
+            <li><a href="eventos.html" class="fs-6 fw-semibold color-text-nav">Eventos</a></li>
+            <li><a href="juegos.html" class="fs-6 fw-semibold color-text-nav">Juegos</a></li>
+            <li><a href="resenas.html" class="active fs-6 fw-semibold color-text-nav">Reseñas</a></li>
+            <li><a href="ofertas.html" class="fs-6 fw-semibold color-text-nav">Ofertas</a></li>
+          <li>
+              <!-- Search Function -->
+              <form class="d-flex p-4" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                  id="search-input"
+                />
+                <button
+                  class="btn btn-outline-success bg-color-buttom"
+                  type="button"
+                  onclick="search()"
+                >
+                  <i class="fa-solid fa-magnifying-glass color-icon"></i>
+                </button>
+              </form>
+            </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <!-- Search Function -->
-        <div class="header-social-links"></div>
       </div>
     </header>
 
@@ -106,17 +130,16 @@
                     <article class="position-relative h-100">
                       <div class="post-img position-relative overflow-hidden">
                         <img
-                          src="assets/img/blog/blog-1.jpg"
+                          src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1RLdppgLllgGZlkjuvHBu6/abbcf1e12935e4654a109324955a5087/RED_KEYART_STD_RGB_WW.jpg"
                           class="img-fluid"
                           alt=""
                         />
-                        <span class="post-date">Marzo 3</span>
+                        <span class="post-date">20 de Marzo 2025</span>
                       </div>
 
                       <div class="post-content d-flex flex-column">
                         <h3 class="post-title">
-                          Dolorum optio tempore voluptas dignissimos cumque fuga
-                          qui quibusdam quia
+                          Assassin's Creed: Shadow
                         </h3>
 
                         <div class="meta d-flex align-items-center">
@@ -127,9 +150,7 @@
                         </div>
 
                         <p>
-                          Similique neque nam consequuntur ad non maxime aliquam
-                          quas. Quibusdam animi praesentium. Aliquam et
-                          laboriosam eius aut nostrum quidem aliquid dicta.
+                          Assassin's Creed Shadows nos lleva al Japón feudal del siglo XVI, durante el período Sengoku, donde los jugadores controlan a dos personajes principales: Naoe, un shinobi especializado en sigilo, y Yasuke, un samurái de origen africano.
                         </p>
 
                         <hr />
@@ -149,16 +170,16 @@
                     <article class="position-relative h-100">
                       <div class="post-img position-relative overflow-hidden">
                         <img
-                          src="assets/img/blog/blog-2.jpg"
+                          src="https://noespaisparafrikis.com/wp-content/uploads/2020/06/mortal-kombat-aftermath_portada.jpg"
                           class="img-fluid"
                           alt=""
                         />
-                        <span class="post-date">Marzo 3</span>
+                        <span class="post-date">26 de mayo 2024</span>
                       </div>
 
                       <div class="post-content d-flex flex-column">
                         <h3 class="post-title">
-                          Nisi magni odit consequatur autem nulla dolorem
+                          Mortal Kombat 11: Aftermath
                         </h3>
 
                         <div class="meta d-flex align-items-center">
@@ -169,9 +190,7 @@
                         </div>
 
                         <p>
-                          Incidunt voluptate sit temporibus aperiam. Quia vitae
-                          aut sint ullam quis illum voluptatum et. Quo libero
-                          rerum voluptatem pariatur nam.
+                          Mortal Kombat 11: Aftermath es la expansión que lleva la saga a nuevos niveles. Con una campaña adicional, nuevos personajes jugables como RoboCop y Sheeva, y movimientos especiales, esta expansión profundiza en la historia del torneo mortal.
                         </p>
 
                         <hr />
@@ -191,7 +210,7 @@
                     <article class="position-relative h-100">
                       <div class="post-img position-relative overflow-hidden">
                         <img
-                          src="assets/img/blog/blog-3.jpg"
+                          src="https://generacionxbox.com/wp-content/uploads/2023/10/halo-infinite.jpg"
                           class="img-fluid"
                           alt=""
                         />
@@ -200,8 +219,7 @@
 
                       <div class="post-content d-flex flex-column">
                         <h3 class="post-title">
-                          Possimus soluta ut id suscipit ea ut. In quo quia et
-                          soluta libero sit sint.
+                          Halo Infinite
                         </h3>
 
                         <div class="meta d-flex align-items-center">
@@ -212,10 +230,7 @@
                         </div>
 
                         <p>
-                          Aut iste neque ut illum qui perspiciatis similique
-                          recusandae non. Fugit autem dolorem labore omnis et.
-                          Eum temporibus fugiat voluptate enim tenetur sunt
-                          omnis.
+                          Halo Infinite ofrece una campaña renovada y un multijugador gratuito que ha revitalizado la franquicia. El juego introduce mecánicas innovadoras, como el gancho para el combate y una historia que mantiene a los fans emocionados.
                         </p>
 
                         <hr />
@@ -235,7 +250,7 @@
                     <article class="position-relative h-100">
                       <div class="post-img position-relative overflow-hidden">
                         <img
-                          src="assets/img/blog/blog-4.jpg"
+                          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggNd9dol7JJT9hfhg2qhFZSaI9C-_733z0-wfw6TdT4qFgtNI3NtmPsc9m0-Am7SoooGMGFGENo70MJ2gZK46SwsVeab8BkkvvEm55Lj0DdTc4GzThT2Qfgi4jwrVc7rxrI4V8pko_rNkw/s1600/capa2.png"
                           class="img-fluid"
                           alt=""
                         />
@@ -244,8 +259,7 @@
 
                       <div class="post-content d-flex flex-column">
                         <h3 class="post-title">
-                          Non rem rerum nam cum quo minus. Dolor distinctio
-                          deleniti explicabo eius exercitationem.
+                          Apex Legends.
                         </h3>
 
                         <div class="meta d-flex align-items-center">
@@ -256,10 +270,7 @@
                         </div>
 
                         <p>
-                          Aspernatur rerum perferendis et sint. Voluptates
-                          cupiditate voluptas atque quae. Rem veritatis rerum
-                          enim et autem. Saepe atque cum eligendi eaque iste
-                          omnis a qui.
+                          Apex Legends redefine el battle royale con personajes únicos y habilidades especiales, creando una experiencia estratégica y dinámica. Con su innovador sistema de ping, acción rápida y actualizaciones constantes.
                         </p>
 
                         <hr />
@@ -279,7 +290,7 @@
                     <article class="position-relative h-100">
                       <div class="post-img position-relative overflow-hidden">
                         <img
-                          src="assets/img/blog/blog-5.jpg"
+                          src="https://game-reviewer.com/wp-content/uploads/2022/10/1173124.jpg"
                           class="img-fluid"
                           alt=""
                         />
@@ -288,8 +299,7 @@
 
                       <div class="post-content d-flex flex-column">
                         <h3 class="post-title">
-                          Accusamus quaerat aliquam qui debitis facilis
-                          consequatur
+                          God of War Ragnarök
                         </h3>
 
                         <div class="meta d-flex align-items-center">
@@ -300,11 +310,7 @@
                         </div>
 
                         <p>
-                          In itaque assumenda aliquam voluptatem qui temporibus
-                          iusto nisi quia. Autem vitae quas aperiam nesciunt
-                          mollitia tempora odio omnis. Ipsa odit sit ut amet
-                          necessitatibus. Quo ullam ut corrupti autem
-                          consequuntur totam dolorem.
+                          God of War Ragnarök lleva la historia de Kratos y Atreus a un nuevo nivel, explorando los eventos del Ragnarok con un enfoque profundo en la relación padre-hijo. El juego ofrece combate fluido, impresionantes gráficos y una narrativa épica que mantiene a los jugadores cautivados de principio a fin.
                         </p>
 
                         <hr />
@@ -331,7 +337,7 @@
               <div class="blog-author-widget-2 widget-item">
                 <div class="d-flex flex-column align-items-center">
                   <img
-                    src="assets/img/blog/blog-author.jpg"
+                    src="assets/img/img-bren2.jpg"
                     class="rounded-circle flex-shrink-0"
                     alt=""
                   />
@@ -364,10 +370,7 @@
                   </div>
 
                   <p>
-                    Itaque quidem optio quia voluptatibus dolorem dolor. Modi
-                    eum sed possimus accusantium. Quas repellat voluptatem
-                    officia numquam sint aspernatur voluptas. Esse et
-                    accusantium ut unde voluptas.
+                    Soy Bren, diseñadora web y amante de los videojuegos. Desde pequeña, el primer juego que me atrapó fue Mortal Kombat. Esa experiencia me enseñó lo emocionante que son los video juegos , el mundo digital y la pasión por crear cosas únicas. Actualmente, mi juego favorito es Fortnite, donde me divierto jugando con mis amigos y tratando de ganarles en quien hace mas kills.
                   </p>
                 </div>
               </div>
@@ -463,5 +466,6 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.js"></script>
   </body>
 </html>
